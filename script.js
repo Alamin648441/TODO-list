@@ -9,7 +9,7 @@ inputBox.addEventListener("keydown",function(event){
 });
 function addTask() {
     if (inputBox.value === '') {
-        alert("You must write something!");
+        alert("task value is Empaty !");
     } else {
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
@@ -45,5 +45,6 @@ function saveData(){
 function showList (){
     listContainer.innerHTML = localStorage.getItem("data");
 }
+
 
 showList();
